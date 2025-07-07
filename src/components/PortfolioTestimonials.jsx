@@ -1,9 +1,10 @@
 import React from 'react'
+import danler from '/images/danler.png'
 
 const testimonials = [
-  { name: 'John D., developer', text: 'We were amazed at how quickly and efficiently our new home was built without compromising on quality. Instant Homes exceeded all our expectations.', img: 'https://randomuser.me/api/portraits/women/12.jpg' },
-  { name: 'The Moyo Couple', text: 'The flexibility in design options was a huge plus for us. Instant Homes helped us create a home that perfectly fits our unique lifestyle and budget.', img: 'https://randomuser.me/api/portraits/men/23.jpg' },
-  { name: 'Mrs Ncube', text: 'Instant Homes made our dream of owning an eco-friendly home a reality. The quality and attention to detail were simply outstanding!', img: 'https://randomuser.me/api/portraits/women/34.jpg' },
+  { name: 'John D., developer', text: 'We were amazed at how quickly and efficiently our new home was built without compromising on quality. Instant Homes exceeded all our expectations.', img: danler},
+  { name: 'The Moyo Couple', text: 'The flexibility in design options was a huge plus for us. Instant Homes helped us create a home that perfectly fits our unique lifestyle and budget.', img: danler },
+  { name: 'Mrs Ncube', text: 'Instant Homes made our dream of owning an eco-friendly home a reality. The quality and attention to detail were simply outstanding!', img: danler },
 ]
 
 const PortfolioTestimonials = () => (

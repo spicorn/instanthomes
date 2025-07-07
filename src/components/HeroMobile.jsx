@@ -57,7 +57,7 @@ export default function HeroMobile() {
           className="flex items-center gap-3 bg-white/80 backdrop-blur-md rounded-2xl p-3 shadow-lg border border-blue-200/50"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
+          transition={{ duration: 0.2 }}
         >
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg">
             <FaRegClock className="w-6 h-6 text-white" />
@@ -71,7 +71,7 @@ export default function HeroMobile() {
           className="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-800 text-center"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ duration: 0.25 }}
         >
           FIND YOUR <br />
           <span className="block text-lg font-semibold text-gray-600">PERFECT</span>
@@ -84,7 +84,7 @@ export default function HeroMobile() {
           className="text-base text-gray-600 text-center"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
+          transition={{ duration: 0.25 }}
         >
           Experience the future of living with our innovative prefab homes, designed for modern comfort and sustainable living.
         </motion.p>
@@ -94,7 +94,7 @@ export default function HeroMobile() {
           whileHover={{ scale: 1.07, boxShadow: '0 8px 32px #68AAFF55' }}
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          transition={{ duration: 0.25 }}
         >
           Get Started
         </motion.button>

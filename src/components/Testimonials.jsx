@@ -7,11 +7,12 @@ import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { FaQuoteLeft, FaStar } from 'react-icons/fa'
+import danler from '/images/danler.png'
 
 const testimonials = [
-  { name: 'Tariro M.', text: 'Instant Homes made my dream home a reality. Fast, affordable, and beautiful!', img: 'https://randomuser.me/api/portraits/women/65.jpg' },
-  { name: 'Blessing K.', text: 'The quality and service were outstanding. Highly recommend to anyone in Zimbabwe.', img: 'https://randomuser.me/api/portraits/men/45.jpg' },
-  { name: 'Chenai D.', text: 'Eco-friendly and modern. The process was seamless from start to finish.', img: 'https://randomuser.me/api/portraits/women/22.jpg' },
+  { name: 'Tariro M.', text: 'Instant Homes made my dream home a reality. Fast, affordable, and beautiful!', img: danler },
+  { name: 'Blessing K.', text: 'The quality and service were outstanding. Highly recommend to anyone in Zimbabwe.', img: danler },
+  { name: 'Chenai D.', text: 'Eco-friendly and modern. The process was seamless from start to finish.', img: danler },
 ]
 
 const cardVariants = {

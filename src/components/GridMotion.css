@@ -1,3 +1,4 @@
+/* NOTE: overflow: hidden is disabled on mobile for better scrolling performance */
 .noscroll {
   height: 100%;
   width: 100%;
@@ -99,19 +100,6 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.fullview {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.fullview .row__item-inner {
-  border-radius: 0px;
-}
-
 /* Mobile optimizations */
 @media (max-width: 1024px) {
   .gridMotion-container {
@@ -152,5 +140,10 @@
   
   .row__item-img {
     border-radius: 8px;
+  }
+  
+  .intro,
+  .noscroll {
+    overflow: visible !important;
   }
 }

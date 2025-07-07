@@ -25,7 +25,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 function App() {
   const location = useLocation();
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-gray-100 min-h-screen flex flex-col">
+    <div className="bg-gradient-to-br from-blue-50 to-gray-100 min-h-screen flex flex-col overflow-x-hidden">
       {/* Desktop Navbar */}
       <div className="hidden md:block"><Navbar /></div>
       {/* Mobile/Tablet Navbar */}

@@ -85,7 +85,6 @@ const GridMotion = ({ items = [], gradientColor = 'black' }) => {
             </div>
           ))}
         </div>
-        <div className="fullview"></div>
       </section>
     </div>
   );

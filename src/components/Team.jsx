@@ -1,28 +1,29 @@
 import React from 'react'
+import danler from '/images/danler.png'
 
 const team = [
   {
     name: 'Tendai Moyo',
     role: 'Founder & CEO',
-    img: 'https://randomuser.me/api/portraits/men/32.jpg',
+    img: danler,
     desc: 'Visionary leader with 15+ years in construction and prefab innovation.'
   },
   {
     name: 'Rudo Chikore',
     role: 'Head of Design',
-    img: 'https://randomuser.me/api/portraits/women/44.jpg',
+    img: danler,
     desc: 'Award-winning architect passionate about sustainable living.'
   },
   {
     name: 'Simba Ncube',
     role: 'Operations Manager',
-    img: 'https://randomuser.me/api/portraits/men/65.jpg',
+    img: danler,
     desc: 'Expert in project delivery and client satisfaction.'
   },
   {
     name: 'Nyasha Dube',
     role: 'Sales & Marketing',
-    img: 'https://randomuser.me/api/portraits/women/68.jpg',
+    img: danler,
     desc: 'Connecting Zimbabweans to their dream homes.'
   },
 ]

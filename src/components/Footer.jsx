@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaFacebook, FaInstagram, FaLinkedin, FaArrowUp } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const socials = [
   { name: 'Facebook', url: '#', icon: <FaFacebook /> },
@@ -24,10 +25,11 @@ function BackToTopButton() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-6 right-6 z-50 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all animate-bounce-in"
+      className="fixed z-50 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all animate-bounce-in bottom-4 right-4 sm:bottom-6 sm:right-6"
+      style={{ minWidth: 48, minHeight: 48 }}
       aria-label="Back to top"
     >
-      <FaArrowUp className="w-5 h-5" />
+      <FaArrowUp className="w-6 h-6" />
     </button>
   )
 }
@@ -53,9 +55,9 @@ const Footer = () => (
         <div className="text-sm text-primary/80">&copy; {new Date().getFullYear()} Instant Homes. All rights reserved.</div>
       </div>
       <nav className="flex flex-wrap gap-4 md:gap-8 text-sm font-medium">
-        <a href="/about" className="hover:underline hover:text-primary transition">About</a>
-        <a href="/portfolio" className="hover:underline hover:text-primary transition">Portfolio</a>
-        <a href="/contact" className="hover:underline hover:text-primary transition">Contact</a>
+        <NavLink to="/about" className={({isActive}) => `hover:underline hover:text-primary transition ${isActive ? 'text-primary font-bold underline' : ''}`}>About</NavLink>
+        <NavLink to="/portfolio" className={({isActive}) => `hover:underline hover:text-primary transition ${isActive ? 'text-primary font-bold underline' : ''}`}>Portfolio</NavLink>
+        <NavLink to="/contact" className={({isActive}) => `hover:underline hover:text-primary transition ${isActive ? 'text-primary font-bold underline' : ''}`}>Contact</NavLink>
       </nav>
       <div className="flex gap-4 justify-center md:justify-end">
         {socials.map(s => (
